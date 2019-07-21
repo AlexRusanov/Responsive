@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+.outer-container {
+    width: 100vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    color: #fff;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #373c3f;
+}
+
+.header-menu-title {
+    font-size: 12px;
+    padding: 12px 0 12px 20px;
+}
+
+.header-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #202529;
+    flex-basis: 12.5%;
+}
+
+.bar-1, .bar-2, .bar-3 {
+    width: 15px;
+    height: 2px;
+    margin: 1px 0;
+    transition: 0.4s;
+    background-color: #fff;
+}
+
+.active-burger-menu .bar-1 {
+    transform: rotate(45deg) translate(3px, 3px);
+}
+
+.active-burger-menu .bar-2 {
+    opacity: 0;
+}
+
+.active-burger-menu .bar-3 {
+    transform: rotate(-45deg) translate(3px, -3px);
+}
+
+.menu-container-list {
+    display: none;
+}
+
+.menu-container-list.active-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    bottom: -210px;
+    width: 57vw;
+}
+
+.container-list-item {
+    padding: 14px;
+    border: 1px solid #f3f3f3;
+    font-size: 12px;
+    background-color: #fafafa;
+    color: #444;
+}
+
+.container-list-item:focus {
+    background-color: #f5f5f5;
+}
+
+.header-slogan {
+    background: url("../img/320px/header-bg.png");
+}
