@@ -12,6 +12,7 @@
 
 .header-menu {
     display: flex;
+    position: relative;
     justify-content: space-between;
     background-color: #373c3f;
 }
@@ -26,7 +27,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     background-color: #202529;
     flex-basis: 12.5%;
 }
@@ -76,6 +76,10 @@
     background-color: #f5f5f5;
 }
 
+.header-menu-logo {
+    display: none;
+}
+
 .header-slogan {
     background: url("../img/320px/header-bg.png") no-repeat;
     background-size: cover;
@@ -98,6 +102,7 @@
 
 .products-item {
     display: flex;
+    border-top: 3px solid #f5f5f5;
 }
 
 .products-item-title {
@@ -157,6 +162,10 @@
     padding-bottom: 10px;
     color: #cbccce;
     text-align: left;
+}
+
+.menu-list-logo {
+    display: none;
 }
 
 .menu-list-part-1 {
@@ -236,6 +245,10 @@
     background-color: #acd8ad;
 }
 
+.footer-logo {
+    display: none;
+}
+
 .footer-top-text {
     padding-top: 12px;
     padding-bottom: 5px;
@@ -243,4 +256,566 @@
 
 .footer-bottom-text {
     padding-bottom: 12px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 640px) {
+
+    .header-menu-title {
+        font-size: 24px;
+        padding: 24px 0 24px 40px;
+    }
+
+    .bar-1, .bar-2, .bar-3 {
+        width: 30px;
+        height: 4px;
+        margin: 2px 0;
+    }
+
+    .active-burger-menu .bar-1 {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .active-burger-menu .bar-3 {
+        transform: rotate(-45deg) translate(6px, -5px);
+    }
+
+    .menu-container-list.active-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        bottom: -320px;
+        width: 57vw;
+    }
+
+    .container-list-item {
+        padding: 20px;
+        border: 2px solid #f3f3f3;
+        font-size: 20px;
+    }
+
+    .header-slogan {
+        background: url("../img/640px/header-bg.png") no-repeat;
+    }
+
+    .header-slogan-container {
+        padding: 30px 0 195px 40px;
+    }
+
+    .header-slogan-text {
+        padding-bottom: 10px;
+        font-size: 32px;
+    }
+
+    .header-slogan-link {
+        font-size: 28px;
+        padding-top: 10px;
+    }
+
+    .products-item {
+        border-top: 3px solid #f5f5f5;
+    }
+
+    .products-item-title {
+        font-size: 30px;
+        padding: 60px 0;
+    }
+
+    .product-item-arrow:before {
+        width: 16px;
+        height: 16px;
+        content: "";
+        border-top: 2px white solid;
+        border-right: 2px white solid;
+        transform: rotate(45deg);
+    }
+
+    .product-bg1 {
+        background: url("../img/640px/pizza-delivery.png") no-repeat bottom;
+    }
+
+    .product-bg2 {
+        background: url("../img/640px/ua-ux-salads.png") no-repeat bottom;
+    }
+
+    .product-bg3 {
+        background: url("../img/640px/desserts.png") no-repeat top;
+    }
+
+    .menu-list-title {
+        font-size: 35px;
+        padding-top: 45px;
+        padding-left: 20px;
+    }
+
+    .menu-list-title-small {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .menu-list-part-1 {
+        padding: 22px 0 22px 40px;
+        font-size: 28px;
+    }
+
+    .menu-list-inner-container {
+        padding: 0 40px;
+    }
+
+    .menu-list-submenu-title {
+        margin: 30px 0;
+        font-size: 22px;
+    }
+
+    .fa-stroopwafel {
+        font-size: 50px;
+    }
+
+    .fa-wine-glass-alt {
+        font-size: 48px;
+    }
+
+    .fa-coffee {
+        font-size: 40px;
+    }
+
+    .fa-beer {
+        font-size: 40px;
+    }
+
+    .menu-list-item {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+
+    .list-item-title {
+        font-size: 20px;
+    }
+
+    .list-item-price {
+        font-size: 25px;
+    }
+
+    .list-item-description {
+        font-size: 16px;
+    }
+
+    .menu-list-part-2 {
+        padding: 22px 0 22px 40px;
+        font-size: 28px;
+        margin-top: 60px;
+    }
+
+    .footer {
+        margin-top: 110px;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        background-color: #acd8ad;
+    }
+
+    .footer-top-text {
+        padding-top: 24px;
+        padding-bottom: 10px;
+    }
+
+    .footer-bottom-text {
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 980px) {
+    .header-menu-title {
+        display: none;
+    }
+
+    .header-menu-container {
+        display: none;
+    }
+
+    .menu-container-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-list-item {
+        padding: 45px 0 45px 30px;
+        border: none;
+        font-size: 15px;
+        background-color: inherit;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    .container-list-item:focus {
+        background-color: inherit;
+    }
+
+    .header-menu-logo {
+        display: block;
+        align-self: center;
+        padding-right: 30px;
+    }
+
+    .header-slogan {
+        background: url("../img/980px/header-bg.png") no-repeat;
+    }
+
+    .header-slogan-container {
+        padding: 65px 0 253px 30px;
+    }
+
+    .header-slogan-text {
+        padding-bottom: 15px;
+        font-size: 54px;
+    }
+
+    .header-slogan-link {
+        font-size: 34px;
+        padding-top: 40px;
+    }
+
+    .products {
+        display: flex;
+    }
+
+    .products-item {
+        display: block;
+        flex-basis: 33.33%;
+        border-top: none;
+        cursor: pointer;
+    }
+
+    .products-item-title {
+        font-size: 34px;
+        font-weight: 700;
+        padding: 145px 0;
+    }
+
+    .product-item-arrow {
+        display: none;
+    }
+
+    .product-bg1 {
+        background: url("../img/980px/pizza-delivery.png") no-repeat bottom;
+    }
+
+    .product-bg2 {
+        background: url("../img/980px/ua-ux-salads.png") no-repeat bottom;
+    }
+
+    .product-bg3 {
+        background: url("../img/980px/desserts.png") no-repeat top;
+    }
+
+    .menu-list-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 50px 30px 10px;
+    }
+
+    .menu-list-title {
+        font-size: 30px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .menu-list-title-small {
+        display: block;
+        font-size: 17px;
+        padding-top: 10px;
+    }
+
+    .menu-list-logo {
+        display: inherit;
+    }
+
+    .menu-list-part-container {
+        float: left;
+        width: 50%;
+    }
+
+    .menu-list-part-1 {
+        padding: 25px 0 25px 20px;
+        font-size: 25px;
+    }
+
+    .menu-list-submenu-title {
+        margin: 30px 0;
+        font-size: 22px;
+    }
+
+    .fa-stroopwafel {
+        font-size: 42px;
+    }
+
+    .fa-wine-glass-alt {
+        font-size: 44px;
+    }
+
+    .fa-coffee {
+        font-size: 40px;
+    }
+
+    .fa-beer {
+        font-size: 40px;
+    }
+
+    .menu-list-part-2 {
+        padding: 25px 0 25px 20px;
+        font-size: 25px;
+        margin-top: 0;
+    }
+
+    .menu-list-item {
+        margin-bottom: 18px;
+        font-size: 20px;
+    }
+
+    .list-item-title {
+        font-size: 20px;
+    }
+
+    .list-item-price {
+        font-size: 23px;
+    }
+
+    .list-item-description {
+        font-size: 14px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 85px;
+        font-size: 18px;
+    }
+
+    .footer-logo {
+        display: block;
+        margin: 7px 0 7px 30px;
+    }
+
+    .footer-text-container {
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .footer-top-text {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .footer-bottom-text {
+        padding-bottom: 0px;
+    }
+
+    .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 981px) {
+    .header-menu-title {
+        display: none;
+    }
+
+    .header-menu-container {
+        display: none;
+    }
+
+    .menu-container-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-list-item {
+        padding: 45px 0 45px 30px;
+        border: none;
+        font-size: 15px;
+        background-color: inherit;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    .container-list-item:focus {
+        background-color: inherit;
+    }
+
+    .header-menu-logo {
+        display: block;
+        align-self: center;
+        padding-right: 30px;
+    }
+
+    .header-slogan {
+        background: url("../img/1200px/header-bg.png") no-repeat;
+        background-size: cover;
+    }
+
+    .header-slogan-container {
+        padding: 65px 0 380px 40px;
+    }
+
+    .header-slogan-text {
+        padding-bottom: 15px;
+        font-size: 62px;
+    }
+
+    .header-slogan-link {
+        font-size: 34px;
+        padding-top: 40px;
+    }
+
+    .products {
+        display: flex;
+    }
+
+    .products-item {
+        display: block;
+        flex-basis: 33.33%;
+        border-top: none;
+        cursor: pointer;
+    }
+
+    .products-item-title {
+        font-size: 40px;
+        padding: 180px 0;
+    }
+
+    .product-item-arrow {
+        display: none;
+    }
+
+    .product-bg1 {
+        background: url("../img/1200px/pizza-delivery.png") no-repeat;
+        background-size: cover;
+    }
+
+    .product-bg2 {
+        background: url("../img/1200px/ua-ux-salads.png") no-repeat;
+        background-size: cover;
+    }
+
+    .product-bg3 {
+        background: url("../img/1200px/desserts.png") no-repeat;
+        background-size: cover;
+    }
+
+    .menu-list-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 40px 15px 15px 20px;
+    }
+
+    .menu-list-title {
+        font-size: 33px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .menu-list-title-small {
+        display: block;
+        font-size: 17px;
+        padding-top: 10px;
+    }
+
+    .menu-list-logo {
+        display: inherit;
+    }
+
+    .menu-list-part-container {
+        float: left;
+        width: 50%;
+    }
+
+    .menu-list-part-1 {
+        padding: 25px 0 25px 15px;
+        font-size: 30px;
+    }
+
+    .menu-list-submenu-title {
+        margin: 30px 0;
+        font-size: 25px;
+    }
+
+    .fa-stroopwafel {
+        font-size: 42px;
+    }
+
+    .fa-wine-glass-alt {
+        font-size: 44px;
+    }
+
+    .fa-coffee {
+        font-size: 40px;
+    }
+
+    .fa-beer {
+        font-size: 40px;
+    }
+
+    .menu-list-part-2 {
+        padding: 25px 0 25px 15px;
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .menu-list-item {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .list-item-title {
+        font-size: 22px;
+    }
+
+    .list-item-price {
+        font-size: 25px;
+    }
+
+    .list-item-description {
+        font-size: 17px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 85px;
+        font-size: 18px;
+    }
+
+    .footer-logo {
+        display: block;
+        margin: 7px 0 7px 30px;
+    }
+
+    .footer-text-container {
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .footer-top-text {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .footer-bottom-text {
+        padding-bottom: 0px;
+    }
+
+    .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
 }
